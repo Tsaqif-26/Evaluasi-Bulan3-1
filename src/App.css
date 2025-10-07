@@ -1,0 +1,195 @@
+/* === RESET DASAR === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* === LATAR BELAKANG UTAMA === */
+body {
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* === WRAPPER UTAMA === */
+.app-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-box {
+  background-color: #1b1b1b;
+  width: 100%;
+  max-width: 450px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.main-box:hover {
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.1);
+}
+
+/* === JUDUL === */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #00e5ff;
+  letter-spacing: 1px;
+}
+
+/* === FORM INPUT === */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 14px;
+  background-color: #2a2a2a;
+  color: #f5f5f5;
+  border: 1px solid #333;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #00e5ff;
+  box-shadow: 0 0 6px #00e5ff;
+}
+
+/* === BUTTON UMUM === */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00e5ff;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #00bcd4;
+  transform: scale(1.03);
+}
+
+/* === FILTER BUTTON === */
+.todo-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.todo-filter button {
+  background-color: #2a2a2a;
+  color: #f5f5f5;
+  border: 1px solid #333;
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+.todo-filter button:hover {
+  background-color: #333;
+  border-color: #00bcd4;
+}
+
+/* === DAFTAR TODO === */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #242424;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s, transform 0.2s;
+}
+
+li:hover {
+  background-color: #2f2f2f;
+  transform: scale(1.02);
+}
+
+/* === CHECKBOX DAN TEKS === */
+li input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: #00e5ff;
+}
+
+li span {
+  flex: 1;
+  margin-left: 10px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/* === TOMBOL HAPUS === */
+li button {
+  background-color: #e91e63;
+  color: white;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+li button:hover {
+  background-color: #c2185b;
+  transform: scale(1.05);
+}
+
+/* === PESAN SAAT KOSONG === */
+.empty {
+  color: #777;
+  font-style: italic;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* === RESPONSIVE (BIAR BAGUS DI HP/TABLET) === */
+@media (max-width: 500px) {
+  .main-box {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  .todo-filter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .todo-filter button {
+    width: 90%;
+  }
+}
