@@ -27,5 +27,3 @@ Tampilan dibuat dengan **tema gelap modern** agar nyaman digunakan di berbagai k
 
 ## ⚙️ Cara Menjalankan Secara Lokal
 > Kalau kamu ingin mencoba versi live, cukup buka link demo di atas.  
-```bash
-git clone https://github.com/username/todo-app-react.git
